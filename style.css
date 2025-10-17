@@ -72,8 +72,8 @@ img {
 
 .section .title {
     font-family: var(--title-font);
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 300;
     color: var(--color-dark);
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -357,6 +357,8 @@ img {
 
 #about .image img {
     border-radius: 1rem;
+    max-height: 600px;
+    max-width: 100px;
 }
 
 #about .text .title {
@@ -531,22 +533,9 @@ footer.section {
     color: #a0a0a0;
 }
 
-.developer {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.developer .logo-dev {
-    font-family: var(--title-font);
-    font-size: 1.5rem;
-    margin-right: 30px;
-    color: #2e2ed2;
-    transition: color 0.3s;
-}
-
-.developer .logo-dev:hover {
-    color: var(--color-white);
+.logoBB {
+    padding-right: 30px;
+    max-height: 60px;
 }
 
 
@@ -557,7 +546,7 @@ footer.section {
         margin-right: 1rem;
     }
     .section .title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     /* Menu Mobile */
