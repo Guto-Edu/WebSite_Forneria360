@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="260" viewBox="0 0 680 260" role="img" aria-labelledby="title desc">
+  <title id="title">Forneria 360º</title>
+  <desc id="desc">Logo placeholder da Forneria 360º com forno de tijolos e chama</desc>
+  <rect width="680" height="260" fill="#fff4d6"/>
+  <g transform="translate(250 14)">
+    <path d="M30 145a105 105 0 0 1 210 0v32H30z" fill="#c91f2c"/>
+    <path d="M55 145a80 80 0 0 1 160 0v8H55z" fill="#fff4d6"/>
+    <path d="M97 174c-7-42 30-54 31-91 28 34 57 58 26 91z" fill="#fff4d6"/>
+    <path d="M126 174c-2-25 16-36 16-59 18 21 34 37 18 59z" fill="#efb018" opacity=".95"/>
+    <g fill="#fff4d6" opacity=".9">
+      <rect x="46" y="116" width="36" height="14" rx="2"/><rect x="89" y="116" width="36" height="14" rx="2"/><rect x="132" y="116" width="36" height="14" rx="2"/><rect x="175" y="116" width="36" height="14" rx="2"/>
+      <rect x="66" y="89" width="36" height="14" rx="2"/><rect x="109" y="89" width="36" height="14" rx="2"/><rect x="152" y="89" width="36" height="14" rx="2"/>
+      <rect x="93" y="63" width="36" height="14" rx="2"/><rect x="136" y="63" width="36" height="14" rx="2"/>
+    </g>
+  </g>
+  <text x="340" y="218" text-anchor="middle" font-family="Georgia, serif" font-size="68" letter-spacing="8" fill="#161616" font-weight="700">FORNERIA</text>
+  <text x="340" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#161616" font-weight="900">360º</text>
+</svg>

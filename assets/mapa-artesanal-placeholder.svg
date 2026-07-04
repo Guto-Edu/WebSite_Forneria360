@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#fff4d6"/>
+  <path d="M100 600C300 460 450 590 620 420s300-60 470-250" fill="none" stroke="#173f2a" stroke-width="36" stroke-linecap="round" opacity=".35"/>
+  <path d="M100 600C300 460 450 590 620 420s300-60 470-250" fill="none" stroke="#173f2a" stroke-width="10" stroke-dasharray="30 30" stroke-linecap="round"/>
+  <circle cx="620" cy="420" r="36" fill="#c91f2c"/>
+  <path d="M620 350c-58 0-105 45-105 100 0 78 105 190 105 190s105-112 105-190c0-55-47-100-105-100zm0 138a38 38 0 1 1 0-76 38 38 0 0 1 0 76z" fill="#c91f2c"/>
+  <text x="620" y="110" text-anchor="middle" font-family="Georgia, serif" font-size="58" fill="#173f2a">Mapa artesanal</text>
+  <text x="620" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#173f2a" opacity=".8">coloque aqui sua arte de “como chegar”</text>
+  <text x="620" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#173f2a">Rua Santo Antônio, 400 · São Francisco</text>
+</svg>

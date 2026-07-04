@@ -1,0 +1,1146 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre a Forneria 360º | História e pizzaiolo</title>
+    <meta
+      name="description"
+      content="Conheça a história da Forneria 360º, a transição do delivery para a experiência presencial e o espaço para apresentar Dudu, o pizzaiolo."
+    />
+    <meta name="theme-color" content="#173f2a" />
+    <link rel="canonical" href="https://www.forneria360.com.br/sobre.html" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Sobre a Forneria 360º | História e pizzaiolo"
+    />
+    <meta
+      property="og:description"
+      content="Conheça a história da Forneria 360º, a transição do delivery para a experiência presencial e o espaço para apresentar Dudu, o pizzaiolo."
+    />
+    <meta
+      property="og:url"
+      content="https://www.forneria360.com.br/sobre.html"
+    />
+    <meta
+      property="og:image"
+      content="./assets/cardapio-atual-forneria-360.jpeg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      href="./assets/favicon.ico"
+      type="image/svg+xml"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,800&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --cream: #fff4d6;
+        --cream-2: #f7e6b8;
+        --ink: #1b1b16;
+        --muted: #6e624d;
+        --green: #173f2a;
+        --green-2: #0f2b1d;
+        --red: #c91f2c;
+        --red-2: #8f1720;
+        --gold: #efb018;
+        --paper: #fffaf0;
+        --shadow: 0 24px 80px rgba(36, 24, 10, 0.16);
+        --radius: 28px;
+      }
+      html {
+        scroll-behavior: smooth;
+        background: var(--cream);
+      }
+      body {
+        font-family: Inter, system-ui, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(
+            circle at 10% 0%,
+            rgba(239, 176, 24, 0.2),
+            transparent 32rem
+          ),
+          radial-gradient(
+            circle at 90% 10%,
+            rgba(201, 31, 44, 0.1),
+            transparent 28rem
+          ),
+          var(--cream);
+        overflow-x: hidden;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.16;
+        z-index: -1;
+      }
+      .serif {
+        font-family: "Cormorant Garamond", Georgia, serif;
+      }
+      .display {
+        font-family: "Bodoni Moda", "Cormorant Garamond", serif;
+      }
+      .container {
+        width: min(1160px, calc(100% - 32px));
+        margin-inline: auto;
+        padding: 15px;
+      }
+      .wide {
+        width: min(1380px, calc(100% - 18px));
+        margin-inline: auto;
+      }
+      .section {
+        padding: 96px 0;
+      }
+      .section-tight {
+        padding: 56px 0;
+      }
+      .eyebrow {
+        font-size: 0.76rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--red);
+        font-weight: 800;
+      }
+      .title-xl {
+        font-size: clamp(3.6rem, 16vw, 11rem);
+        line-height: 0.78;
+        letter-spacing: -0.08em;
+      }
+      .title-lg {
+        font-size: clamp(2.5rem, 8vw, 5.7rem);
+        line-height: 0.88;
+        letter-spacing: -0.045em;
+      }
+      .title-md {
+        font-size: clamp(2.1rem, 6vw, 4rem);
+        line-height: 0.95;
+        letter-spacing: -0.035em;
+      }
+      .body-lg {
+        font-size: clamp(1.05rem, 2.5vw, 1.28rem);
+        line-height: 1.75;
+        color: var(--muted);
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.65rem;
+        min-height: 48px;
+        padding: 0.85rem 1.18rem;
+        border-radius: 999px;
+        font-weight: 850;
+        letter-spacing: 0.02em;
+        transition: 0.28s ease;
+        position: relative;
+        isolation: isolate;
+        white-space: nowrap;
+      }
+      .btn-red {
+        background: var(--red);
+        color: #fff;
+        box-shadow: 0 14px 28px rgba(201, 31, 44, 0.25);
+      }
+      .btn-red:hover {
+        background: var(--red-2);
+        transform: translateY(-2px) rotate(-0.5deg);
+      }
+      .btn-green {
+        background: var(--green);
+        color: #fff;
+        box-shadow: 0 14px 28px rgba(23, 63, 42, 0.22);
+      }
+      .btn-green:hover {
+        background: var(--green-2);
+        transform: translateY(-2px) rotate(0.5deg);
+      }
+      .btn-ghost {
+        border: 1px solid rgba(23, 63, 42, 0.28);
+        color: var(--green);
+        background: rgba(255, 250, 240, 0.62);
+        backdrop-filter: blur(10px);
+      }
+      .btn-ghost:hover {
+        background: #fff;
+        transform: translateY(-2px);
+      }
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 60;
+        transition: 0.35s ease;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 244, 214, 0.78),
+          rgba(255, 244, 214, 0.18)
+        );
+        backdrop-filter: blur(10px);
+      }
+      .nav.scrolled {
+        background: rgba(255, 244, 214, 0.94);
+        box-shadow: 0 12px 34px rgba(44, 29, 11, 0.12);
+      }
+      .nav-inner {
+        height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .brand img {
+        height: 54px;
+        width: auto;
+      }
+      .nav-links {
+        display: flex;
+        gap: 26px;
+        align-items: center;
+      }
+      .nav-links a {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-weight: 850;
+        color: var(--green);
+      }
+      .nav-links a:hover {
+        color: var(--red);
+      }
+      .mobile-btn {
+        display: none;
+        width: 46px;
+        height: 46px;
+        border: 1px solid rgba(23, 63, 42, 0.18);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 250, 240, 0.72);
+      }
+      .mobile-panel {
+        display: none;
+      }
+      .italy-flag {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 42px;
+        height: 14px;
+        border: 1px solid rgba(23, 63, 42, 0.16);
+        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+      }
+      .italy-flag span:nth-child(1) {
+        background: #008c45;
+      }
+      .italy-flag span:nth-child(2) {
+        background: #fff;
+      }
+      .italy-flag span:nth-child(3) {
+        background: #cd212a;
+      }
+      .hero {
+        min-height: 100svh;
+        padding-top: 84px;
+        display: grid;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.04fr 0.96fr;
+        min-height: calc(100svh - 84px);
+        align-items: center;
+        gap: 40px;
+      }
+      .wood-card {
+        position: relative;
+        min-height: 620px;
+        border-radius: 0 0 44px 0;
+        overflow: hidden;
+        background: #402612;
+        box-shadow: var(--shadow);
+      }
+      .wood-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(135deg, rgba(18, 9, 2, 0.85), rgba(72, 41, 18, 0.42)),
+          url("https://images.unsplash.com/photo-1610484826967-09c5720778c7?auto=format&fit=crop&w=1500&q=82");
+        background-size: cover;
+        background-position: center;
+        filter: saturate(0.9);
+      }
+      .hero-pizza {
+        position: absolute;
+        width: min(76%, 560px);
+        aspect-ratio: 1;
+        left: 8%;
+        top: 21%;
+        border-radius: 50%;
+        object-fit: cover;
+        filter: drop-shadow(0 40px 50px rgba(0, 0, 0, 0.45));
+        animation: floatPizza 5.5s ease-in-out infinite;
+      }
+      .tomato {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        right: 8%;
+        bottom: 12%;
+        border-radius: 50%;
+        background: radial-gradient(circle at 35% 35%, #ff6b57, #c91f2c 68%);
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.28);
+        animation: wiggle 6s ease-in-out infinite;
+      }
+      .pepper {
+        position: absolute;
+        left: 5%;
+        bottom: 18%;
+        font-size: 64px;
+        transform: rotate(-22deg);
+        filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.25));
+      }
+      @keyframes floatPizza {
+        0%,
+        100% {
+          transform: translateY(0) rotate(-4deg);
+        }
+        50% {
+          transform: translateY(-18px) rotate(1deg);
+        }
+      }
+      @keyframes wiggle {
+        0%,
+        100% {
+          transform: rotate(0);
+        }
+        50% {
+          transform: rotate(16deg) translateY(-10px);
+        }
+      }
+      .vertical-social {
+        position: absolute;
+        right: 12px;
+        top: 30%;
+        writing-mode: vertical-rl;
+        display: flex;
+        gap: 16px;
+        z-index: 4;
+        font-size: 0.74rem;
+        color: rgba(23, 63, 42, 0.58);
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+      .vertical-social a:hover {
+        color: var(--red);
+      }
+      .hero-copy {
+        position: relative;
+        z-index: 3;
+        padding: 48px 0;
+      }
+      .stamp {
+        width: 112px;
+        height: 112px;
+        border: 1px dashed rgba(23, 63, 42, 0.38);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: var(--green);
+        font-weight: 900;
+        text-align: center;
+        line-height: 1.05;
+        transform: rotate(-9deg);
+        background: rgba(255, 250, 240, 0.42);
+      }
+      .paper {
+        background: rgba(255, 250, 240, 0.72);
+        border: 1px solid rgba(23, 63, 42, 0.14);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(10px);
+      }
+      .paper-flat {
+        background: var(--paper);
+        border: 1px solid rgba(23, 63, 42, 0.14);
+        border-radius: var(--radius);
+      }
+      .marquee {
+        overflow: hidden;
+        border-block: 1px solid rgba(23, 63, 42, 0.16);
+        background: rgba(255, 250, 240, 0.5);
+      }
+      .marquee-track {
+        display: flex;
+        gap: 36px;
+        width: max-content;
+        animation: marquee 23s linear infinite;
+        padding: 14px 0;
+        font-weight: 900;
+        color: var(--green);
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        font-size: 0.78rem;
+      }
+      .marquee-track span {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .marquee-track i {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--red);
+        display: inline-block;
+      }
+      @keyframes marquee {
+        to {
+          transform: translateX(-50%);
+        }
+      }
+      .stat {
+        padding: 24px;
+        border-left: 1px solid rgba(23, 63, 42, 0.14);
+      }
+      .stat strong {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(2.7rem, 6vw, 5rem);
+        line-height: 1;
+        color: var(--green);
+      }
+      .stat span {
+        display: block;
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-top: 8px;
+      }
+      .pizza-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .pizza-tile {
+        cursor: pointer;
+        padding: 22px;
+        min-height: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .pizza-tile::after {
+        content: "";
+        position: absolute;
+        inset: auto 18px 18px auto;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: rgba(239, 176, 24, 0.18);
+        transform: scale(0);
+        transition: 0.3s ease;
+      }
+      .pizza-tile:hover,
+      .pizza-tile.is-active {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow);
+      }
+      .pizza-tile:hover::after,
+      .pizza-tile.is-active::after {
+        transform: scale(1);
+      }
+      .pizza-art {
+        position: relative;
+        height: 190px;
+        display: grid;
+        place-items: center;
+        margin: -4px 0 12px;
+      }
+      .pizza-art img {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        transition: 0.38s ease;
+        opacity: 0.08;
+        filter: grayscale(1) contrast(1.45);
+        transform: scale(0.92);
+      }
+      .pizza-tile:hover .pizza-art img,
+      .pizza-tile.is-active .pizza-art img {
+        opacity: 1;
+        filter: none;
+        transform: scale(1.05) rotate(3deg);
+        box-shadow: 0 18px 30px rgba(42, 25, 11, 0.18);
+      }
+      .pizza-sketch {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-image: url("./assets/pizza-desenho.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.3s ease;
+        opacity: 0.85;
+      }
+      .pizza-tile:hover .pizza-sketch,
+      .pizza-tile.is-active .pizza-sketch {
+        opacity: 0;
+        transform: scale(0.8) rotate(-12deg);
+      }
+      .price {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 700;
+        font-size: 2.4rem;
+        color: var(--green);
+      }
+      .ingredient {
+        font-size: 0.94rem;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border: 1px solid rgba(23, 63, 42, 0.18);
+        border-radius: 999px;
+        padding: 0.42rem 0.78rem;
+        color: var(--green);
+        font-size: 0.78rem;
+        font-weight: 850;
+        background: rgba(255, 250, 240, 0.58);
+      }
+      .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+      .photo-stack {
+        position: relative;
+        min-height: 540px;
+      }
+      .photo-stack img {
+        position: absolute;
+        object-fit: cover;
+        border-radius: 34px;
+        box-shadow: var(--shadow);
+      }
+      .photo-stack .one {
+        inset: 0 16% 16% 0;
+      }
+      .photo-stack .two {
+        right: 0;
+        bottom: 0;
+        width: 46%;
+        height: 45%;
+        border: 8px solid var(--cream);
+      }
+      .photo-stack .three {
+        left: 6%;
+        bottom: 7%;
+        width: 31%;
+        height: 32%;
+        border: 8px solid var(--cream);
+        transform: rotate(-5deg);
+      }
+      .dudu-card {
+        display: grid;
+        grid-template-columns: 0.72fr 1fr;
+        overflow: hidden;
+      }
+      .dudu-card img {
+        height: 100%;
+        min-height: 430px;
+        object-fit: cover;
+      }
+      .dudu-card .copy {
+        padding: 38px;
+      }
+      .quote {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        line-height: 1.05;
+        color: var(--green);
+      }
+      .location-card {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .map-frame {
+        width: 100%;
+        min-height: 430px;
+        border: 0;
+        filter: saturate(0.8) contrast(0.92);
+      }
+      .route-card {
+        padding: 34px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr 0.9fr;
+        gap: 16px;
+      }
+      .gallery img {
+        height: 320px;
+        border-radius: 28px;
+        object-fit: cover;
+      }
+      .gallery img:first-child {
+        height: 500px;
+        grid-row: span 2;
+      }
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+      .blog-card {
+        overflow: hidden;
+        transition: 0.3s ease;
+      }
+      .blog-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow);
+      }
+      .blog-card img {
+        height: 220px;
+        object-fit: cover;
+      }
+      .blog-card .copy {
+        padding: 24px;
+      }
+      .footer {
+        background: #11150f;
+        color: #fff7df;
+        padding: 64px 0 28px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .footer a:hover {
+        color: #fff;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.8fr 0.8fr 0.8fr;
+        gap: 28px;
+        position: relative;
+        z-index: 2;
+      }
+      .footer h3 {
+        font-weight: 900;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        font-size: 0.78rem;
+        color: #efb018;
+      }
+      .footer p,
+      .footer li {
+        color: rgba(255, 247, 223, 0.72);
+      }
+      .floating-cta {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 50;
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .leaf-line {
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--gold),
+          transparent
+        );
+        position: relative;
+      }
+      .leaf-line::after {
+        content: "✦";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--gold);
+        background: var(--cream);
+        padding: 0 12px;
+      }
+      .article {
+        max-width: 790px;
+        margin-inline: auto;
+      }
+      .article p {
+        font-size: 1.12rem;
+        line-height: 1.9;
+        color: var(--muted);
+        margin: 1.2rem 0;
+      }
+      .article h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 2.3rem;
+        color: var(--green);
+        margin-top: 2.4rem;
+        line-height: 1;
+      }
+      .article ul {
+        margin: 1rem 0 1rem 1.2rem;
+        color: var(--muted);
+        line-height: 1.8;
+        list-style: disc;
+      }
+      @media (max-width: 1024px) {
+        .nav-links,
+        .nav-cta {
+          display: none;
+        }
+        .mobile-btn {
+          display: flex;
+        }
+        .mobile-panel {
+          display: block;
+          position: fixed;
+          inset: 76px 12px auto 12px;
+          background: rgba(255, 250, 240, 0.96);
+          border: 1px solid rgba(23, 63, 42, 0.14);
+          border-radius: 24px;
+          box-shadow: var(--shadow);
+          padding: 18px;
+          transform: translateY(-14px);
+          opacity: 0;
+          pointer-events: none;
+          transition: 0.25s ease;
+        }
+        .mobile-panel.open {
+          opacity: 1;
+          transform: translateY(0);
+          pointer-events: auto;
+        }
+        .mobile-panel a {
+          display: block;
+          padding: 14px;
+          border-bottom: 1px solid rgba(23, 63, 42, 0.1);
+          font-weight: 900;
+          color: var(--green);
+        }
+        .hero-grid,
+        .split,
+        .location-card,
+        .dudu-card {
+          grid-template-columns: 1fr;
+        }
+        .hero {
+          padding-top: 76px;
+        }
+        .hero-grid {
+          gap: 0;
+        }
+        .wood-card {
+          min-height: 360px;
+          border-radius: 0 0 32px 32px;
+        }
+        .hero-pizza {
+          width: 70%;
+          left: 15%;
+          top: 14%;
+        }
+        .hero-copy {
+          padding: 36px 0 56px;
+        }
+        .vertical-social {
+          display: none;
+        }
+        .pizza-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .gallery,
+        .blog-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+        .gallery img,
+        .gallery img:first-child {
+          height: 260px;
+          grid-row: auto;
+        }
+        .photo-stack {
+          min-height: 460px;
+        }
+        .section {
+          padding: 72px 0;
+        }
+        .floating-cta {
+          left: 16px;
+          right: 16px;
+        }
+        .floating-cta .btn {
+          width: 100%;
+        }
+      }
+      @media (max-width: 640px) {
+        .container {
+          width: min(100% - 32px, 1160px);
+        }
+        .brand img {
+          height: 44px;
+        }
+        .nav-inner {
+          height: 70px;
+        }
+        .mobile-panel {
+          inset: 70px 10px auto;
+        }
+        .hero {
+          padding-top: 70px;
+        }
+        .title-xl {
+          font-size: clamp(4rem, 24vw, 6.6rem);
+        }
+        .pizza-grid {
+          grid-template-columns: 1fr;
+        }
+        .pizza-tile {
+          min-height: auto;
+        }
+        .stat {
+          border-left: 0;
+          border-top: 1px solid rgba(23, 63, 42, 0.14);
+        }
+        .photo-stack {
+          min-height: 380px;
+        }
+        .dudu-card .copy,
+        .route-card {
+          padding: 24px;
+        }
+        .footer {
+          padding-bottom: 92px;
+        }
+        .section-tight {
+          padding: 40px 0;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Forneria 360º",
+        "url": "https://www.forneria360.com.br/",
+        "image": "https://www.forneria360.com.br/assets/cardapio-atual-forneria-360.jpeg",
+        "servesCuisine": ["Pizza napolitana", "Italiana"],
+        "priceRange": "R$65-R$75",
+        "telephone": "+55 32 99941-3289",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Santo Antônio, 400",
+          "addressLocality": "São João del-Rei",
+          "addressRegion": "MG",
+          "addressCountry": "BR"
+        },
+        "sameAs": [
+          "https://www.instagram.com/forneria_360/",
+          "https://maps.app.goo.gl/q2sva2yknLpbwB6Q7"
+        ],
+        "hasMenu": "https://instadelivery.com.br/forneria360"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="nav" data-header>
+      <div class="container nav-inner">
+        <a class="brand" href="./index.html" aria-label="Forneria 360º"
+          ><img src="./assets/logo_forneria.png" alt="Forneria 360º"
+        /></a>
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a href="./index.html">Início</a><a href="./cardapio.html">Cardápio</a
+          ><a href="./sobre.html">Sobre</a
+          ><a href="./localizacao.html">Localização</a
+          ><a href="./blog.html">Blog</a>
+        </nav>
+        <div class="nav-cta">
+          <a
+            class="btn btn-red"
+            href="https://instadelivery.com.br/forneria360"
+            target="_blank"
+            rel="noopener"
+            >Pedir no InstaDelivery</a
+          >
+        </div>
+        <button
+          class="mobile-btn"
+          data-mobile-btn
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+      <div class="mobile-panel" data-mobile-panel>
+        <a href="./index.html">Início</a><a href="./cardapio.html">Cardápio</a
+        ><a href="./sobre.html">Sobre a pizzaria</a
+        ><a href="./localizacao.html">Localização</a
+        ><a href="./blog.html">Blog</a
+        ><a
+          href="https://instadelivery.com.br/forneria360"
+          target="_blank"
+          rel="noopener"
+          >Pedir agora</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="section pt-32">
+        <div class="container split">
+          <div class="reveal">
+            <span class="eyebrow">nossa história</span>
+            <h1 class="display title-lg text-[#173f2a] mt-3">
+              A pizza saiu da caixa e ganhou cenário.
+            </h1>
+            <p class="body-lg mt-6">
+              A Forneria 360º começou com força no delivery, mas a proposta
+              napolitana sempre pediu algo além: comer a pizza no momento certo,
+              com a massa ainda respirando forno.
+            </p>
+            <p class="body-lg mt-4">
+              Agora a marca entra em uma fase mais completa, com atendimento
+              presencial de quarta a domingo na pousada do bairro São Francisco.
+            </p>
+          </div>
+          <div class="photo-stack reveal">
+            <img
+              class="one"
+              src="./assets/bar_pousada.png"
+              alt="Foto da pousada"
+            /><img
+              class="two"
+              src="./assets/marguerita.jpg"
+              alt="Pizza no forno"
+            /><img
+              class="three"
+              src="./assets/preparo 1.png"
+              alt="Foto do Dudu"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section bg-[#fffaf0]">
+        <div class="container p-0 dudu-card paper reveal">
+          <img
+            src="./assets/Foto do Dudu.png"
+            alt="Placeholder para foto real do Dudu"
+            class="max-h-[65vh] "
+          />
+          <div class="copy">
+            <span class="eyebrow">Dudu, pizzaiolo</span>
+            <h2 class="quote mt-3">
+              Meu nome é Carlos Eduardo Braga.
+            </h2>
+
+            <p class="body-lg mt-6">
+              Minha ligação com a cultura italiana despertou em mim uma admiração profunda pela pizza como tradição, encontro e partilha. Foi essa visão que inspirou a criação da Forneria 360°.
+            </p>
+
+            <p class="body-lg mt-4">
+              Aos 50 anos, após deixar um trabalho de mais de cinco anos, decidi transformar um sonho antigo em realidade. Dediquei três anos ao estudo autodidata da pizza napolitana, testando massas, fermentações, farinhas e técnicas até chegar ao resultado que queria oferecer.
+            </p>
+
+            <p class="body-lg mt-4">
+              Hoje, cada pizza que preparo carrega respeito pela tradição, ingredientes italianos e o desejo de fazer parte de momentos especiais. Para mim, fazer pizza é ter o privilégio de estar presente em algumas das ocasiões mais felizes da vida das pessoas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container grid md:grid-cols-3 gap-5">
+          <div class="paper-flat p-7 reveal">
+            <span class="eyebrow">antes</span>
+            <h3 class="serif text-4xl text-[#173f2a] mt-2">Delivery</h3>
+            <p class="text-[#6e624d] leading-7 mt-4">
+              Prático, direto, funcional. Foi o começo da marca.
+            </p>
+          </div>
+          <div class="paper-flat p-7 reveal">
+            <span class="eyebrow">agora</span>
+            <h3 class="serif text-4xl text-[#173f2a] mt-2">Pousada</h3>
+            <p class="text-[#6e624d] leading-7 mt-4">
+              A experiência acontece no tempo certo, com pizza quente e ambiente
+              de encontro.
+            </p>
+          </div>
+          <div class="paper-flat p-7 reveal">
+            <span class="eyebrow">sempre</span>
+            <h3 class="serif text-4xl text-[#173f2a] mt-2">Processo</h3>
+            <p class="text-[#6e624d] leading-7 mt-4">
+              Massa, molho, queijo, forno e cuidado.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <img
+            src="./assets/logo_forneria.png"
+            alt="Forneria 360º"
+            class="w-48 bg-[#fff4d6] rounded-2xl p-2 mb-5"
+          />
+          <p class="leading-7">
+            Pizza napolitana em São João del-Rei, agora com experiência
+            presencial na pousada e pedidos online pelo InstaDelivery.
+          </p>
+        </div>
+        <div>
+          <h3 class="mb-4">Páginas</h3>
+          <ul class="space-y-3">
+            <li><a href="./cardapio.html">Cardápio</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./localizacao.html">Como chegar</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-4">Pedidos</h3>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="https://instadelivery.com.br/forneria360"
+                target="_blank"
+                rel="noopener"
+                >Pedir no InstaDelivery</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/5532999413289?text=Oi%2C%20Forneria%20360!%20Quero%20saber%20mais%20sobre%20as%20pizzas."
+                target="_blank"
+                rel="noopener"
+                >WhatsApp</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/search?q=Forneria+360+Delivery+S%C3%A3o+Jo%C3%A3o+del+Rei#lrd=0xa1c97e48efd74d:0xf8ba122b0eaef26c,3,,,"
+                target="_blank"
+                rel="noopener"
+                >Avaliar no Google</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-4">Endereço</h3>
+          <p>Rua Santo Antônio, 400, São Francisco, São João del-Rei - MG</p>
+          <p class="mt-3">
+            Quarta a domingo, das 18h50 as 22h50, no presencial e no delivery.
+          </p>
+        </div>
+      </div>
+      <div
+        class="container flex flex-col md:flex-row justify-between gap-3 mt-10 border-t border-white/10 text-sm text-white/60 relative z-10"
+      >
+       
+        <p class="flex items-center">
+          © <span data-year></span> Forneria 360º. Todos os direitos reservados.
+        </p>
+        <div class="flex gap-2 items-center">
+          <p class="text-white/60 mt-2">
+            Desenvolvido por 
+          </p>
+          <a href="https://bitbloomai.com" target="_blank" rel="noopener">
+          <img
+            src="./assets/Logo_Comp_Bl.png"
+            href="https://bitbloomai.com"
+            target="_blank"
+            rel="noopener"
+            class="h-10 mt-2"
+          />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const header = document.querySelector("[data-header]"),
+        mobileBtn = document.querySelector("[data-mobile-btn]"),
+        mobilePanel = document.querySelector("[data-mobile-panel]"),
+        year = document.querySelector("[data-year]");
+      if (year) year.textContent = new Date().getFullYear();
+      function onScroll() {
+        if (header) header.classList.toggle("scrolled", window.scrollY > 18);
+      }
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+      if (mobileBtn && mobilePanel) {
+        mobileBtn.addEventListener("click", () => {
+          const open = mobilePanel.classList.toggle("open");
+          mobileBtn.setAttribute("aria-expanded", String(open));
+          mobileBtn.textContent = open ? "×" : "☰";
+        });
+        mobilePanel.querySelectorAll("a").forEach((a) =>
+          a.addEventListener("click", () => {
+            mobilePanel.classList.remove("open");
+            mobileBtn.textContent = "☰";
+            mobileBtn.setAttribute("aria-expanded", "false");
+          }),
+        );
+      }
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.14 },
+      );
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+      const tiles = document.querySelectorAll("[data-pizza-tile]");
+      tiles.forEach((tile) =>
+        tile.addEventListener("click", () => {
+          tiles.forEach((t) => t.classList.remove("is-active"));
+          tile.classList.add("is-active");
+        }),
+      );
+    </script>
+  </body>
+</html>
+
+
+
+

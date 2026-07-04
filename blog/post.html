@@ -1,0 +1,440 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Forneria 360°</title>
+    <meta
+      name="description"
+      content="Conteúdo da Forneria 360° sobre pizza napolitana, experiência presencial e dicas para pedir melhor."
+    />
+    <meta name="theme-color" content="#173f2a" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Blog Forneria 360°" />
+    <meta
+      property="og:description"
+      content="Conteúdo da Forneria 360° sobre pizza napolitana, experiência presencial e dicas para pedir melhor."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,800&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --cream: #fff4d6;
+        --ink: #1b1b16;
+        --muted: #6e624d;
+        --green: #173f2a;
+        --green-2: #0f2b1d;
+        --red: #c91f2c;
+        --red-2: #8f1720;
+        --paper: #fffaf0;
+        --shadow: 0 24px 80px rgba(36, 24, 10, 0.16);
+        --radius: 28px;
+      }
+      html {
+        scroll-behavior: smooth;
+        background: var(--cream);
+      }
+      body {
+        font-family: Inter, system-ui, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 10% 0%, rgba(239, 176, 24, 0.2), transparent 32rem),
+          radial-gradient(circle at 90% 10%, rgba(201, 31, 44, 0.1), transparent 28rem),
+          var(--cream);
+        overflow-x: hidden;
+      }
+      .display {
+        font-family: "Bodoni Moda", "Cormorant Garamond", serif;
+      }
+      .serif {
+        font-family: "Cormorant Garamond", Georgia, serif;
+      }
+      .container {
+        width: min(1160px, calc(100% - 32px));
+        margin-inline: auto;
+        padding: 15px;
+      }
+      .section {
+        padding: 96px 0;
+      }
+      .eyebrow {
+        font-size: 0.76rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--red);
+        font-weight: 800;
+      }
+      .title-md {
+        font-size: clamp(2.4rem, 6vw, 4.2rem);
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.65rem;
+        min-height: 48px;
+        padding: 0.85rem 1.18rem;
+        border-radius: 999px;
+        font-weight: 850;
+        letter-spacing: 0.02em;
+        transition: 0.28s ease;
+        white-space: nowrap;
+      }
+      .btn-red {
+        background: var(--red);
+        color: #fff;
+      }
+      .btn-red:hover {
+        background: var(--red-2);
+      }
+      .btn-ghost {
+        border: 1px solid rgba(23, 63, 42, 0.28);
+        color: var(--green);
+        background: rgba(255, 250, 240, 0.62);
+      }
+      .btn-ghost:hover {
+        background: #fff;
+      }
+      .paper {
+        background: rgba(255, 250, 240, 0.88);
+        border: 1px solid rgba(255, 255, 255, 0.72);
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
+      }
+      .paper-flat {
+        background: rgba(255, 250, 240, 0.94);
+        border: 1px solid rgba(23, 63, 42, 0.08);
+        border-radius: 24px;
+      }
+      .nav {
+        position: fixed;
+        inset: 0 0 auto;
+        z-index: 60;
+        background: rgba(255, 244, 214, 0.94);
+        backdrop-filter: blur(10px);
+      }
+      .nav-inner {
+        height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .brand img {
+        height: 54px;
+        width: auto;
+      }
+      .nav-links {
+        display: flex;
+        gap: 26px;
+        align-items: center;
+      }
+      .nav-links a {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-weight: 850;
+        color: var(--green);
+      }
+      .mobile-btn,
+      .mobile-panel {
+        display: none;
+      }
+      .article {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+      .article p,
+      .article li {
+        color: var(--muted);
+        font-size: 1.06rem;
+        line-height: 1.9;
+      }
+      .article h2 {
+        margin-top: 2.4rem;
+        margin-bottom: 0.9rem;
+        font-size: clamp(1.7rem, 4vw, 2.5rem);
+        line-height: 1;
+        color: var(--green);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-weight: 700;
+      }
+      .article ul {
+        margin: 1rem 0 1rem 1.2rem;
+      }
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+      }
+      .blog-card {
+        overflow: hidden;
+        text-decoration: none;
+        transition: transform 0.28s ease;
+      }
+      .blog-card:hover {
+        transform: translateY(-4px);
+      }
+      .blog-card .copy {
+        padding: 24px;
+      }
+      .footer {
+        background: #102b1d;
+        color: rgba(255, 250, 240, 0.84);
+        padding: 84px 0 40px;
+        margin-top: 48px;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 28px;
+      }
+      .footer a:hover {
+        color: #fff;
+      }
+      .floating-cta {
+        position: fixed;
+        left: 24px;
+        right: 24px;
+        bottom: 16px;
+        z-index: 70;
+        display: none;
+      }
+      @media (max-width: 980px) {
+        .nav-links {
+          display: none;
+        }
+        .mobile-btn {
+          display: inline-flex;
+          width: 46px;
+          height: 46px;
+          border: 1px solid rgba(23, 63, 42, 0.18);
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          background: rgba(255, 250, 240, 0.72);
+        }
+        .mobile-panel {
+          position: fixed;
+          inset: 76px 12px auto;
+          display: grid;
+          gap: 12px;
+          background: rgba(255, 250, 240, 0.96);
+          border: 1px solid rgba(23, 63, 42, 0.1);
+          border-radius: 22px;
+          padding: 18px;
+          box-shadow: var(--shadow);
+          transform: translateY(-18px);
+          opacity: 0;
+          pointer-events: none;
+          transition: 0.26s ease;
+        }
+        .mobile-panel.open {
+          transform: translateY(0);
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .footer-grid,
+        .blog-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 640px) {
+        .container,
+        .article {
+          width: min(100% - 32px, 1160px);
+        }
+        .brand img {
+          height: 44px;
+        }
+        .nav-inner {
+          height: 70px;
+        }
+        .mobile-panel {
+          inset: 70px 10px auto;
+        }
+        .section {
+          padding: 88px 0 72px;
+        }
+        .footer {
+          padding-bottom: 92px;
+        }
+        .floating-cta {
+          display: block;
+        }
+        .floating-cta .btn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav" data-header>
+      <div class="container nav-inner">
+        <a class="brand" href="../index.html" aria-label="Forneria 360°">
+          <img src="../assets/logo_forneria.png" alt="Forneria 360°" />
+        </a>
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a href="../index.html">Início</a>
+          <a href="../cardapio.html">Cardápio</a>
+          <a href="../sobre.html">Sobre</a>
+          <a href="../localizacao.html">Localização</a>
+          <a href="../blog.html">Blog</a>
+        </nav>
+        <button
+          class="mobile-btn"
+          data-mobile-btn
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+      <div class="mobile-panel" data-mobile-panel>
+        <a href="../index.html">Início</a>
+        <a href="../cardapio.html">Cardápio</a>
+        <a href="../sobre.html">Sobre a pizzaria</a>
+        <a href="../localizacao.html">Localização</a>
+        <a href="../blog.html">Blog</a>
+        <a
+          href="https://instadelivery.com.br/forneria360"
+          target="_blank"
+          rel="noopener"
+        >
+          Pedir agora
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section pt-32">
+        <div data-blog-post data-blog-base=".."></div>
+      </section>
+
+      <section class="section pt-0">
+        <div class="container">
+          <div class="flex items-end justify-between gap-6 mb-8">
+            <div>
+              <span class="eyebrow">mais do blog</span>
+              <h2 class="display title-md text-[#173f2a] mt-3">
+                Continue lendo.
+              </h2>
+            </div>
+            <a class="btn btn-ghost" href="../blog.html">Voltar à listagem</a>
+          </div>
+          <div class="blog-grid" data-blog-related></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <img
+            src="../assets/logo_forneria.png"
+            alt="Forneria 360°"
+            class="w-48 bg-[#fff4d6] rounded-2xl p-2 mb-5"
+          />
+          <p class="leading-7">
+            Pizza napolitana em São João del-Rei, com atendimento presencial e
+            delivery.
+          </p>
+        </div>
+        <div>
+          <h3 class="mb-4">Páginas</h3>
+          <ul class="space-y-3">
+            <li><a href="../cardapio.html">Cardápio</a></li>
+            <li><a href="../sobre.html">Sobre</a></li>
+            <li><a href="../localizacao.html">Como chegar</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-4">Pedidos</h3>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="https://instadelivery.com.br/forneria360"
+                target="_blank"
+                rel="noopener"
+              >
+                Pedir no InstaDelivery
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/5532999413289?text=Oi%2C%20Forneria%20360!%20Quero%20saber%20mais%20sobre%20as%20pizzas."
+                target="_blank"
+                rel="noopener"
+              >
+                WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-4">Horário</h3>
+          <p>Quarta a domingo, das 18h50 as 22h50.</p>
+          <p class="mt-3">Presencial e delivery no mesmo horário.</p>
+        </div>
+      </div>
+      <div
+        class="container flex flex-col md:flex-row justify-between gap-3 mt-10 border-t border-white/10 text-sm text-white/60 relative z-10"
+      >
+       
+        <p class="flex items-center">
+          © <span data-year></span> Forneria 360º. Todos os direitos reservados.
+        </p>
+        <div class="flex gap-2 items-center">
+          <p class="text-white/60 mt-2">
+            Desenvolvido por 
+          </p>
+          <a href="https://bitbloomai.com" target="_blank" rel="noopener">
+          <img
+            src="/assets/Logo_Comp_Bl.png"
+            href="https://bitbloomai.com"
+            target="_blank"
+            rel="noopener"
+            class="h-10 mt-2"
+          />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/blog.js" defer></script>
+    <script>
+      const mobileBtn = document.querySelector("[data-mobile-btn]");
+      const mobilePanel = document.querySelector("[data-mobile-panel]");
+      const year = document.querySelector("[data-year]");
+
+      if (year) year.textContent = new Date().getFullYear();
+
+      if (mobileBtn && mobilePanel) {
+        mobileBtn.addEventListener("click", () => {
+          const open = mobilePanel.classList.toggle("open");
+          mobileBtn.setAttribute("aria-expanded", String(open));
+          mobileBtn.textContent = open ? "×" : "☰";
+        });
+
+        mobilePanel.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobilePanel.classList.remove("open");
+            mobileBtn.setAttribute("aria-expanded", "false");
+            mobileBtn.textContent = "☰";
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+
